@@ -1,5 +1,5 @@
 ﻿# MyPortfolio
 
-assets/display/img1.jpge
-assets/display/img2.jpge
-assets/display/img3.jpge
+assets/display/img1.jpeg
+assets/display/img2.jpeg
+assets/display/img3.jpeg
