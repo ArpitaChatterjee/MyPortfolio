@@ -1,4 +1,5 @@
 ﻿# MyPortfolio
 
-# Preview:
-![Template Screenshot](display/img1.jpg)
+assets/display/img1.jpge
+assets/display/img2.jpge
+assets/display/img3.jpge
