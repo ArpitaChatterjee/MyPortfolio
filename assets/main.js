@@ -71,9 +71,9 @@ sr.reveal('.portfolio__img', { interval: 100 })
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__subtitle', {})
-sr.reveal('.contact__text', { interval: 100 })
-sr.reveal('.contact__input', { delay: 200 })
-sr.reveal('.contact__button', { delay: 300 })
+sr.reveal('.contact__text', { interval: 10 })
+sr.reveal('.contact__input', { delay: 20 })
+sr.reveal('.contact__button', { delay: 30 })
 
 
 
