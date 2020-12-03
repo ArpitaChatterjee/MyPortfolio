@@ -234,29 +234,19 @@
                     <span class="contact__text"><i class='bx bx-home about-info-icon'></i>Chennai, Tamil Nadu, India</span>
                 </div>
 
-                <form action="assets/contact.php" method="post" class="contact__form" id="my_form" >
+                <form action="" method="post" class="contact__form" id="contactForm" >
                     <div class="contact__inputs">
-                        <input name="name" type="text" placeholder="Name" class="contact__input" required>
-                        <input name="email" type="email" placeholder="Email Address" class="contact__input" required>
+                        <input  id="name" type="text" placeholder="Name" class="contact__input" required>
+                        <input id="email" type="email" placeholder="Email Address" class="contact__input" required>
                     </div>
 
-                    <textarea name="msg" cols="0" rows="10" class="contact__input" required></textarea>
+                    <textarea id="message" cols="0" rows="10" class="contact__input" required></textarea>
 
                     <input id="mybtn" type="submit" value="Submit" class="contact__button"><span id="status"></span>
                 </form>
             </div>
         </section>
     </main>
-<!--<form action="mail_handler.php" method="post" name="form" class="form-box">
-			<label for="name">Name</label><br>
-			<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
-			<label for="email">Email ID</label><br>
-			<input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
-			
-			<label for="message">Message</label><br>
-			<textarea name="msg" class="msg-box" placeholder="Enter Your Message Here..." required></textarea><br>
-			<input type="submit" name="submit" value="Send" class="sub-btn">
-		</form>
     <!--===== FOOTER =====-->
     <footer class="footer section">
         <div class="footer__container bd-grid">
@@ -291,14 +281,61 @@
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+
+    <!--Firebase-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="/__/firebase/8.1.1/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="/__/firebase/8.1.1/firebase-analytics.js"></script>
+
+
+
     <!--===== MAIN JS =====-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="assets/main.js"></script>
+    
+    
     <!--<script src="http://maps.googleapis.com/maps/api/js?key=YOUR_APIKEY&sensor=false"></script-->
 
 </body>
 
 </html>
 
-<!--onsubmit="submitForm(); return false;"-->
+<!--onsubmit="submitForm(); return false;"
+
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>-->
 
