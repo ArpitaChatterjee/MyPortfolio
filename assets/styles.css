@@ -525,7 +525,7 @@ img {
         row-gap: 0;
     }
     .home__img {
-        width: 524px;
+        width: 350px;
         right: 10%;
     }
     .about__container {
@@ -539,7 +539,7 @@ img {
         height: 200px;
     }
     .about__img img {
-        width: 165px;
+        width: 150px;
     }
     .skills__container {
         grid-template-columns: repeat(2, 1fr);
