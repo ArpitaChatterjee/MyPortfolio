@@ -143,11 +143,10 @@ var config = {
     storageBucket: "xxxxx",
     messagingSenderId: "xxxxx"
 };
-firebase.initializeApp(config);*/
+firebase.initializeApp(config);
 
 // Initialize Firebase -->
-<
-script src = "/__/firebase/init.js" > < /script>
+<script src = "/__/firebase/init.js" > </script>
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -196,4 +195,4 @@ function saveMessage(name, company, email, phone, message) {
 
         message: message
     });
-}
+}*/
