@@ -192,6 +192,10 @@ img {
     color: var(--white-color);
 }
 
+.nav__logo {
+    height: 45px;
+}
+
 .nav__toggle {
     color: var(--white-color);
     font-size: 1.5rem;
@@ -506,6 +510,9 @@ img {
     .nav__item {
         margin-left: var(--mb-4);
         margin-bottom: 0;
+    }
+    .nav__logo {
+        height: 60px;
     }
     .nav__toggle {
         display: none;
