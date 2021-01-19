@@ -4,6 +4,6 @@
 
 
 
-<img src="assets/display/img1.jpeg" alt="">
-<img src="assets/display/img2.jpeg" alt="">
-<img src="assets/display/img3.jpeg" alt="">
+<img src="assets/display/dp1.jpeg" alt="">
+<img src="assets/display/dp2.jpeg" alt="">
+<img src="assets/display/dp3.jpeg" alt="">
