@@ -553,8 +553,8 @@ img {
         align-items: center;
     }
     .portfolio__container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
     }
     .contact__container {
