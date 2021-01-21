@@ -213,7 +213,7 @@ img {
 /*Active menu*/
 
 .active::after {
-    position: absolute;
+    position: none;
     content: "";
     width: 100%;
     height: .18rem;
@@ -330,6 +330,50 @@ img {
 }
 
 
+/* --------------- Blog Carousel ------------ */
+
+.owl-theme .owl-dots .owl-dot:focus .active::after {
+    outline: none;
+    position: none;
+}
+
+.owl-carousel {
+    padding: 14px;
+    /* margin-right: 5px; */
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    border-radius: 50%;
+}
+
+section .owl-navigation {
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--first-color);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: var(--dark-color);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+}
+
+
+/* -------x------- Blog Carousel -----x------ */
+
+
 /*====Experience====*/
 
 .experience {
@@ -341,12 +385,15 @@ img {
     row-gap: 2rem;
 }
 
-.experience__img {
+.item {
     position: relative;
     overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
 }
 
-.experience__img img {
+.item img {
     border-radius: 50%;
 }
 
@@ -365,9 +412,9 @@ img {
     transition: .3s;
 }
 
-.experience__img:hover .experience__link {
+.item:hover .experience__link {
     bottom: 0;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 
 .experience__link-name {

@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- --------- Owl-Carousel ------>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
 
     <!-- ===== BOX ICONS ===== -->
+    <link rel="stylesheet" href="assets/css/all.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <title>MyPortfolio</title>
@@ -64,8 +70,8 @@
 
                 <div>
                     <h2 class="about__subtitle">I'm Arpita Chatterjee</h2>
-                    <span class="about__profession"> Python Developer ||  AI & Machine Learning Engineer</span>
-                    <p class="about__text">I am a Python Developer and an AI and Machine Learning Engineer. An initiative taking and quick learning individual seeking an opportunity to work for an organization which provides me an opportunity to enhance my skills and knowledge
+                    <span class="about__profession"> Python Developer ||  AI & Machine Learning Enthusiast</span>
+                    <p class="about__text">I am a Python Developer and an AI and Machine Learning Enthusiast. An initiative taking and quick learning individual seeking an opportunity to work for an organization which provides me an opportunity to enhance my skills and knowledge
                         and grow along with the organization objective.</p>
                     <div class="about__social">
                         <a href="https://www.linkedin.com/in/arpitachatterjee2510/." class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
@@ -73,19 +79,21 @@
                         <a href="https://www.instagram.com/_arpita.chatterjee_/" class="about__social-icon"><i class='bx bxl-instagram-alt' ></i></a>
                         <a href="https://www.facebook.com/Chatterjee2510" class="about__social-icon"><i class='bx bxl-facebook-square'></i></a>
                     </div>
-                    <a download="https://drive.google.com/file/d/1wAwWPb07HPbT8adPrlnx20oW-VmXRpnb/view?usp=sharing" href="https://drive.google.com/file/d/1wAwWPb07HPbT8adPrlnx20oW-VmXRpnb/view?usp=sharing" class="button home-button">My Resume</a>
+                    <a download="https://drive.google.com/file/d/17Z9KQDa_utA90Xl6dmSDjYAX1qODTYEz/view?usp=sharing" href="https://drive.google.com/file/d/17Z9KQDa_utA90Xl6dmSDjYAX1qODTYEz/view?usp=sharing" class="button home-button">My Resume</a>
                 </div>
             </div>
         </section>
 
  
+        <!-- --------------------- Blog Carousel ----------------- -->
+
         <!--===== Work Experience =====-->
         <section class="experience section" id="Experience">
             <h2 class="section-title"> Experience </h2>
 
-
-            <div class="experience__container bd-grid">
-                <div class="experience__img">
+     
+            <div class="owl-carousel owl-theme experience__container bd-grid">
+                <div class="item">
                     <img src="assets/img/exp1.jpeg" alt="">
 
                     <div class="experience__link">
@@ -93,7 +101,7 @@
                         <p>Machine Learning & AI Researcher<br>The Young Mind, Virtual<br>November,2020-Present</p></a>
                     </div>
                 </div>
-                <div class="experience__img">
+                <div class="item">
                     <img src="assets/img/exp2.png" alt="">
 
                     <div class="experience__link">
@@ -101,15 +109,15 @@
                         <p>Data Science and Business Analytics<br>The Sparks Foundation, Virtual<br>November,2020- January,2020</p></a>
                     </div>
                 </div>
-                <div class="experience__img">
+                <div class="item">
                     <img src="assets/img/exp3.jpg" alt="">
 
                     <div class="experience__link">
-                        <a href="https://drive.google.com/file/d/1AV2AwEiMu2Kxu_h6iJG_RH13Qm6VNJkz/view?usp=sharing" class="experience__link-name">
+                        <a href="https://drive.google.com/file/d/15F2rwCgEaeIuvFM4monjV2AO7VMC6QX4/view?usp=sharing" class="experience__link-name">
                         <p> Web Development<br>Verzeo, Virtual<br>September 2020 –December 2020<p></a>
                     </div>
                 </div>
-                 <div class="experience__img">
+                 <div class="item">
                     <img src="assets/img/exp4.jpg" alt="">
 
                     <div class="experience__link">
@@ -118,7 +126,7 @@
                     </div>
                 </div>
                 
-                <div class="experience__img">
+                <div class="item">
                     <img src="assets/img/exp5.jpeg" alt="">
 
                     <div class="experience__link">
@@ -126,7 +134,7 @@
                         <p>Human Resources (HR) And Marketing<br>WebArch Club, SRM IST<br>January 2019 – Present<p></a>
                     </div>
                 </div>
-                 <div class="experience__img">
+                 <div class="item">
                     <img src="assets/img/exp6.jpeg" alt="">
 
                     <div class="experience__link">
@@ -134,9 +142,12 @@
                         <p>Marketing<br>Findhope.in Foundation, Virtual<br>July 2020- September 2020<p></a>
                     </div>
                 </div>
-
-
+                    
             </div>
+            <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
         </section>
 
         <!--===== SKILLS =====-->
@@ -172,12 +183,11 @@
                     <span class="skills__name">Computer Vision</span>
                     <span class="skills__name">Python Development</span>
                     <span class="skills__name">Web Scrapping</span>
-                    
                     <span class="skills__name">Front-End Development</span>
 
                     <h3 class="skills__subtitle">Operating System</h3>
                     <span class="skills__name">Windows</span>
-                    <span class="skills__name">Linux</span>
+                   
 
 
                 </div>
@@ -358,9 +368,33 @@
 
     <!--===== MAIN JS =====-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/index.js"></script>
-    <script type="text/javascript" src="assets/main.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
     
     <!--<script src="http://maps.googleapis.com/maps/api/js?key=YOUR_APIKEY&sensor=false"></script-->
 
