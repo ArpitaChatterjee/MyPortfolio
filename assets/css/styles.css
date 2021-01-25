@@ -501,6 +501,7 @@ section .owl-navigation {
 
 .contact__container {
     row-gap: 2rem;
+    text-align: center;
 }
 
 .contact__subtitle {
