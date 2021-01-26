@@ -133,7 +133,7 @@ sr.reveal('.skills__name', { distance: '20px', delay: 25, interval: 50 })
 sr.reveal('.skills__img', { delay: 200 })
 
 /*SCROLL PORTFOLIO*/
-sr.reveal('.portfolio__img', { interval: 100 })
+sr.reveal('.portfolio__img', { interval: 50 })
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__subtitle', {})

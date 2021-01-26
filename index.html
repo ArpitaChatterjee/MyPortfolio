@@ -7,6 +7,13 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
+      
+     
+
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+
 
     <!-- --------- Owl-Carousel ------>
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -30,7 +37,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="https://arpitachatterjee.github.io/MyPortfolio/."><class="nav__logo"><h2 style= "color: var(--dark-color);">Arpita.</h2></a>
+                <a href="https://arpitachatterjee.github.io/MyPortfolio/."><class="nav__logo"><h2 style=" color: var(--dark-color);">Arpita.</h2></a>
             </div>
 
          <div class="nav__menu" id="nav-menu">
@@ -184,9 +191,9 @@
                  
 
                     <h3 class="skills__subtitle">
-                     <span class="skills__name">Scikit-learn</span>
+                     <span class="skills__name">NumPy</span>
                     <span class="skills__name">Tensorflow</span>
-                    <span class="skills__name">Rasa</span>
+                    
                     <span class="skills__name">Machine Learning</span>
                     <span class="skills__name">Data Analysis</span>
                   
@@ -211,24 +218,31 @@
         <!--===== PORTFOLIO =====-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section-title">Projects</h2>
+             <!--div class="button-group button">
+                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                    <button type="button" data-filter=".ml">ML</button>
+                    <button type="button" data-filter=".ds">DS</button>
+                    <button type="button" data-filter=".wd">WD</button>
+                    <button type="button" data-filter=".pd">PyD</button>
+                </div-->
 
 
-            <div class="portfolio__container bd-grid ">
-                <div class="portfolio__img col-6 col-s-9">
+            <div class="portfolio__container bd-grid row grid" >
+                <div class="portfolio__img pd test-popup-link">
                     <img src="assets/img/work2.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://github.com/ArpitaChatterjee/Covid-19-Tracker-with-VoiceAssistant" class="portfolio__link-name">Covid19 Voice Assistant</a>
                     </div>
                 </div>
-                <div class="portfolio__img col-6 col-s-9">
+                <div class="portfolio__img ml test-popup-link ">
                     <img src="assets/img/work13.png" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://github.com/ArpitaChatterjee/Plant-DiseaseDetection" class="portfolio__link-name">Plant Disease Detector</a>
                     </div>
                 </div>
-                <div class="portfolio__img col-6 col-s-9">
+                <div class="portfolio__img ml test-popup-link">
                     <img src="assets/img/work9.jpg" alt="">
 
                     <div class="portfolio__link">
@@ -237,49 +251,49 @@
                 </div>
 
 
-                <div class="portfolio__img col-6 col-s-9">
+                <!--div class="portfolio__img ml test-popup-link ">
                     <img src="assets/img/work10.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://github.com/ArpitaChatterjee/FaceRecognition-Attendance" class="portfolio__link-name">FaceRecognition-Attendance</a>
                     </div>
-                </div>
-                <div class="portfolio__img col-6 col-s-9">
+                </div-->
+                <div class="portfolio__img ds test-popup-link">
                     <img src="assets/img/work11.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://github.com/ArpitaChatterjee/LogisticReg-Titanic-Data-Analysis" class="portfolio__link-name">Titanic Survivor</a>
                     </div>
                 </div>
-                <div class="portfolio__img col-6 col-s-9">
+                <div class="portfolio__img pd test-popup-link">
                     <img src="assets/img/work6.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://github.com/ArpitaChatterjee/MyAudioBook" class="portfolio__link-name">AudioBook</a>
                     </div>
                 </div>
-                <div class="portfolio__img col-6 col-s-9">
+                <!--div class="portfolio__img pd test-popup-link">
                     <img src="assets/img/work12.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://github.com/ArpitaChatterjee/SmartBot" class="portfolio__link-name">SmartBot</a>
                     </div>
-                </div>
-                <div class="portfolio__img col-6 col-s-9">
+                </div-->
+                <div class="portfolio__img wd test-popup-link">
                     <img src="assets/img/work1.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://arpitachatterjee.github.io/MyBlogSpace/" class="portfolio__link-name">MyBlogSpace</a>
                     </div>
                 </div>
-                <div class="portfolio__img col-6 col-s-9">
+                <div class="portfolio__img wd test-popup-link">
                     <img src="assets/img/work3.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://arpitachatterjee.github.io/Tic-Tac-Toe-Game/" class="portfolio__link-name">Tic-Tac_Toe Game</a>
                     </div>
                 </div>
-                <div class="portfolio__img col-6 col-s-9">
+                <div class="portfolio__img wd test-popup-link">
                     <img src="assets/img/work5.jpg" alt="">
 
                     <div class="portfolio__link">
@@ -287,13 +301,13 @@
                     </div>
                 </div>
 
-                <div class="portfolio__img col-6 col-s-9">
+                <!--div class="portfolio__img wd test-popup-link">
                     <img src="assets/img/work8.jpg" alt="">
 
                     <div class="portfolio__link">
                         <a href="https://arpitachatterjee.github.io/To-Do-List/" class="portfolio__link-name">ToDO App</a>
                     </div>
-                </div>
+                </div-->
 
 
             </div>
@@ -339,7 +353,19 @@
  <!-- GSAP -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
+   <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
 
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script
+
+    <!--  isotope js library  -->
+    <script src="vendor/isotope/isotope.min.js"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    
 
 
     <!--===== MAIN JS =====-->
@@ -350,10 +376,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script>
     
     
-    </script>
+  
+
     
     
     <!--<script src="http://maps.googleapis.com/maps/api/js?key=YOUR_APIKEY&sensor=false"></script-->
@@ -362,7 +388,7 @@
 
 </html>
 
-<!--===== FOOTER =====
+<!--FOOTER 
     <footer class="footer section">
         <div class="footer__container bd-grid">
             <div class="footer__data">
