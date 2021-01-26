@@ -446,22 +446,21 @@ img {
         }
     }
     .nav {
-        height: calc(var(--header-height) + 1rem);
+        height: $header-height + 1rem;
         &__list {
             display: flex;
+            padding-top: 0;
         }
         &__item {
-            margin-left: var(--mb-4);
+            margin-left: 3rem;
             margin-bottom: 0;
         }
-        &__toggle {
+        &__toggle,
+        &__close {
             display: none;
         }
         &__link {
-            color: var(--white-color);
-            &:hover {
-                color: var(--white-color);
-            }
+            text-transform: initial;
         }
     }
     .active::after {

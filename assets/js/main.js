@@ -1,4 +1,3 @@
-/*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
@@ -11,6 +10,27 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('nav-toggle', 'nav-menu')
 
+/*----- ANIMATE -----*/
+// OVERLAY
+gsap.to(".first", 1.5, { delay: .5, top: "-100%", ease: Expo.easeInOut });
+gsap.to(".second", 1.5, { delay: .7, top: "-100%", ease: Expo.easeInOut });
+gsap.to(".third", 1.5, { delay: .9, top: "-100%", ease: Expo.easeInOut });
+
+// IMG
+gsap.from('.home__img', { opacity: 0, duration: 2, delay: 2, x: 60 })
+
+// INFORMATION
+gsap.from('.home__information', { opacity: 0, duration: 3, delay: 2.3, y: 25 })
+gsap.from('.anime-text', { opacity: 0, duration: 3, delay: 2.3, y: 25, ease: 'expo.out', stagger: .3 })
+
+// NAV ITEM
+gsap.from('.nav__logo', { opacity: 0, duration: 3, delay: 3.2, y: 25, ease: 'expo.out' });
+gsap.from('.nav__item', { opacity: 0, duration: 3, delay: 3.2, y: 25, ease: 'expo.out', stagger: .2 })
+
+// SOCIAL
+gsap.from('.home__social-icon', { opacity: 0, duration: 3, delay: 4, y: 25, ease: 'expo.out', stagger: .2 })
+
+
 /*===== REMOVE MENU MOBILE =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -20,7 +40,52 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
+
+const responsive = {
+        0: {
+            portfolio__img: 1
+        },
+
+        600: {
+            portfolio__img: 2
+        },
+        1000: {
+            portfolio__img: 3
+        }
+    }
+    // Carousal
+$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+
+
+
+
+})
+
+//*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
@@ -40,6 +105,7 @@ function scrollActive() {
         }
     })
 }
+
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
@@ -74,125 +140,3 @@ sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', { interval: 10 })
 sr.reveal('.contact__input', { delay: 20 })
 sr.reveal('.contact__button', { delay: 30 })
-
-
-
-/*CONTACT ME*/
-/*function _(id) {
-    return document.getElementsById(id);
-}
-
-function submitForm() {
-    _("mybtn").disable = true;
-    _("status").innerHTML = "Please Wait...";
-    var formdata = new FormData();
-    formdata.append("name", _("name").value);
-    formdata.append("email", _("email").value);
-    formdata.append("message", _("message").value);
-
-    var ajax = new XMLHttpRequest();
-    ajax.open("POST", "contact.php");
-    ajax.onreadystatechange = function() {
-        if (ajax.readyState == 4 && ajax.status == 200) {
-            if (ajax.responseText == "success") {
-                _("my_form").innerHTML = '<h2>Thanks ' + _("name").value + ', your message has been sent.</h2>';
-            } else {
-                _("status").innerHTML = ajax.responseText;
-                _("mybtn").disable = false;
-            }
-        }
-    }
-    ajax.send(formdata);
-}
-
-$('form.ajax').on('submit', function() {
-    var that = $(this),
-        url = that.attr('action'),
-        type = that.attr('method'),
-        data = {};
-
-    that.find(['name']).each(function(index, value) {
-        var that = $(this),
-            name = that.attr('name'),
-            val = that.val();
-
-        data[name] = value;
-    });
-    $.ajax({
-        url: url,
-        type: type,
-        data: data,
-        success: function(response) {
-            console.log(response);
-        }
-    });
-
-    return false;
-});*/
-
-
-
-/*CONTACT ME*/
-
-/* Initialize Firebase 
-var config = {
-    apiKey: "xxxxx",
-    authDomain: "xxxxx",
-    databaseURL: "xxxxx",
-    projectId: "xxxxx",
-    storageBucket: "xxxxx",
-    messagingSenderId: "xxxxx"
-};
-firebase.initializeApp(config);
-
-// Initialize Firebase -->
-<script src = "/__/firebase/init.js" > </script>
-
-// Reference messages collection
-var messagesRef = firebase.database().ref('messages');
-
-// Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
-
-// Submit form
-function submitForm(e) {
-    e.preventDefault();
-
-    // Get values
-    var name = getInputVal('name');
-
-    var email = getInputVal('email');
-
-    var message = getInputVal('message');
-
-    // Save message
-    saveMessage(name, company, email, phone, message);
-
-    // Show alert
-    document.querySelector('.alert').style.display = 'block';
-
-    // Hide alert after 3 seconds
-    setTimeout(function() {
-        document.querySelector('.alert').style.display = 'none';
-    }, 3000);
-
-    // Clear form
-    document.getElementById('contactForm').reset();
-}
-
-// Function to get get form values
-function getInputVal(id) {
-    return document.getElementById(id).value;
-}
-
-// Save message to firebase
-function saveMessage(name, company, email, phone, message) {
-    var newMessageRef = messagesRef.push();
-    newMessageRef.set({
-        name: name,
-
-        email: email,
-
-        message: message
-    });
-}*/
