@@ -206,7 +206,7 @@ img {
 
 .nav__logo {
     font-size: var(--normal-font-size);
-    color: var(--white-color);
+    color: var(--dark-color);
     height: 45px;
 }
 
