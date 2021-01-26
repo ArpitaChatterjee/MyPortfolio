@@ -836,15 +836,15 @@ section .owl-navigation {
 }
 
 .first {
-    background-color: var(--first-color);
+    background-color: var(--dark-color);
 }
 
 .second {
-    background-color: var(--first-color);
+    background-color: var(--dark-color);
     left: 33.3%;
 }
 
 .third {
-    background-color: var(--first-color);
+    background-color: var(--dark-color);
     left: 66.6%;
 }
