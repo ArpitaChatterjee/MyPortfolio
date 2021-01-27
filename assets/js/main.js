@@ -78,12 +78,8 @@ $(document).ready(function() {
                 items: 3
             }
         }
-    })
-
-
-
-
-})
+    });
+});
 
 //*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
