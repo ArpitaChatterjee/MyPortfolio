@@ -433,6 +433,28 @@ img {
 
 /* --------------- Blog Carousel ------------ */
 
+.owl-theme .owl-dots .owl-dot:focus .active::after {
+    outline: none;
+    position: none;
+}
+
+.owl-carousel {
+    padding: 14px;
+    /* margin-right: 5px; */
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    border-radius: 50%;
+}
+
+section .owl-navigation {
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
 
 /* -------x------- Blog Carousel -----x------ */
 
@@ -484,21 +506,6 @@ img {
 
 .experience__link-name {
     color: var(--dark-color);
-}
-
-.owl-theme .owl-dots .owl-dot:focus .active::after {
-    outline: none;
-    position: none;
-}
-
-.owl-carousel {
-    padding: 14px;
-    /* margin-right: 5px; */
-}
-
-.owl-carousel .owl-item img {
-    display: block;
-    border-radius: 50%;
 }
 
 .owl-nav {
