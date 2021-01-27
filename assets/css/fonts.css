@@ -1,9 +1,45 @@
 
-
-/* @font-face */ 
-
-@font-face{
-    font-family: "Roboto";
-    src: '../fonts/Roboto/Roboto-Regular.ttf';
+/*  font-family: Abel  */
+@font-face {
+    font-family: Abel;
+    src: url('../fonts/Abel-Regular.ttf');
 }
 
+/*  font-family: KIte one */
+@font-face {
+    font-family: Kiteone;
+    src: url('../fonts/KiteOne-Regular.ttf');
+}
+
+/*  font-family: Gelasio */
+@font-face {
+    font-family: Lexend;
+    src: url('../fonts/Gelasio-Regular.ttf');
+}
+
+/*  font-family: Josefin   */
+@font-face {
+    font-family: Josefin;
+    src: url('../fonts/JosefinSans-Italic-VariableFont_wght.ttf');
+}
+
+/*  font-family: Livvic  */
+@font-face {
+    font-family: Livvic;
+    src: url('../fonts/Livvic-Regular.ttf');
+}
+
+@font-face{
+    font-family: Dancing Script;
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: Satisfy;
+    src: url("../fonts/Satisfy-Regular.ttf");
+}
+
+@font-face{
+    font-family: ebg;
+    src: url("../fonts/EBGaramond-Italic-VariableFont_wght.ttf");
+}
