@@ -60,9 +60,9 @@ $(document).ready(function() {
         margin: 10,
 
         animateOut: 'fadeOut',
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 3000,
+        //autoplay: true,
+        //autoplayHoverPause: true,
+        //autoplayTimeout: 3000,
         dots: false,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
