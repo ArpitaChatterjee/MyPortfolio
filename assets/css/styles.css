@@ -455,6 +455,22 @@ section .owl-navigation {
     width: 100%;
 }
 
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--first-color);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: var(--dark-color);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+}
+
 
 /* -------x------- Blog Carousel -----x------ */
 
@@ -606,7 +622,7 @@ section .owl-navigation {
     color: var(--dark-color);
 }
 
-
+z
 /* ===== CONTACT =====*/
 
 .contact__container {
