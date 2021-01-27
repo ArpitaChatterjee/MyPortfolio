@@ -79,8 +79,8 @@ const responsive = {
                 items: 3
             }
         }
-    })
-})
+    }),
+});
     
 
 //*===== SCROLL SECTIONS ACTIVE LINK =====*/
