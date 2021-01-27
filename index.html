@@ -344,19 +344,39 @@
         </section>
     </main>
     
+    <script>
+        
+    $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        responsive: {
+            0: {
+                items: 1
+            },
 
-   <!-- GSAP -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-
-   <!--  Jquery js file  -->
-    <script src="./js/jquery.3.4.1.js"></script>
-
-  
-
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+});
     
+
+        </script>
+ <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
 
 
     <!--===== MAIN JS =====-->
@@ -367,6 +387,13 @@
   
     <script src="assets/js/owl.carousel.min.js"></script>
     
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+   <!-- GSAP -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+  
 
 </body>
 
