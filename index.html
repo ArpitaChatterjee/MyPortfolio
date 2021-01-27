@@ -10,9 +10,7 @@
       
      
 
-    <!--  Magnific Popup css file  -->
-    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
-
+   
 
 
     <!-- --------- Owl-Carousel ------>
@@ -359,11 +357,34 @@
     <!--  Bootstrap js file  -->
     <script src="./js/bootstrap.min.js"></script
 
-    <!--  isotope js library  -->
-    <script src="vendor/isotope/isotope.min.js"></script>
+   <script>
+            $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
 
-    <!--  Magnific popup script file  -->
-    <script src="vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+})
+    </script>
 
     
 
