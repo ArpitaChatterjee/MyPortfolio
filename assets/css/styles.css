@@ -669,6 +669,12 @@ z
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .contact__container {
+        text-align: center;
+    }
+}
+
 
 /* ===== FOOTER=====
 
