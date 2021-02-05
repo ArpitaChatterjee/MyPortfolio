@@ -59,13 +59,13 @@ $(document).ready(function() {
         loop: true,
         margin: 10,
 
-        animateOut: 'fadeOut',
+        //animateOut: 'fadeOut',
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 3000,
-        dots: false,
-        nav: true,
-        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        dots: true,
+        // nav: true,
+
         responsive: {
             0: {
                 items: 1
