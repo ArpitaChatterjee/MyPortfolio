@@ -486,16 +486,6 @@ section .owl-navigation {
     row-gap: 2rem;
 }
 
-.item {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 20px;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .item img {
     border-radius: 50%;
 }
@@ -561,7 +551,7 @@ section .owl-navigation {
 }
 
 .skills__name {
-    display: flex;
+    display: inline-block;
     font-size: var(--small-font-size);
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
@@ -573,11 +563,6 @@ section .owl-navigation {
 .skills__name:hover {
     background-color: var(--first-color);
     color: var(--white-color);
-}
-
-.skills__img {
-    position: relative;
-    overflow: hidden;
 }
 
 .skills__img img {
@@ -628,7 +613,7 @@ section .owl-navigation {
     color: var(--dark-color);
 }
 
-z
+
 /* ===== CONTACT =====*/
 
 .contact__container {
