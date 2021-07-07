@@ -551,6 +551,7 @@ section .owl-navigation {
 /* ===== SKILLS =====*/
 
 .skills__container {
+    justify-items: center;
     row-gap: 2rem;
 }
 
@@ -560,7 +561,7 @@ section .owl-navigation {
 }
 
 .skills__name {
-    display: inline-block;
+    display: flex;
     font-size: var(--small-font-size);
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
@@ -572,6 +573,11 @@ section .owl-navigation {
 .skills__name:hover {
     background-color: var(--first-color);
     color: var(--white-color);
+}
+
+.skills__img {
+    position: relative;
+    overflow: hidden;
 }
 
 .skills__img img {
