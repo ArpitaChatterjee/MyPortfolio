@@ -56,26 +56,21 @@ const responsive = {
     // Carousal
 $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
-
-        //animateOut: 'fadeOut',
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 3000,
         dots: true,
-        // nav: true,
-
         responsive: {
             0: {
                 items: 1
             },
-
             600: {
                 items: 2
             },
             1000: {
-                items: 3
+                items: 2
             }
         }
     });
@@ -124,9 +119,7 @@ sr.reveal('.about__text', { delay: 250 })
 sr.reveal('.about__social-icon', { delay: 300, interval: 100 })
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__name', { distance: '20px', delay: 25, interval: 50 })
-sr.reveal('.skills__img', { delay: 200 })
+sr.reveal('.skills__content', { interval: 50 })
 
 /*SCROLL PORTFOLIO*/
 sr.reveal('.portfolio__img', { interval: 50 })
@@ -136,3 +129,19 @@ sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', { interval: 10 })
 sr.reveal('.contact__input', { delay: 20 })
 sr.reveal('.contact__button', { delay: 30 })
+
+/*===== TYPEWRITER EFFECT =====*/
+const typewriterElement = document.getElementById('typewriter');
+const textToType = "Software Engineer in Test (SDET)";
+let charIndex = 0;
+
+function typeWriter() {
+    if (charIndex < textToType.length) {
+        typewriterElement.innerHTML += textToType.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 100);
+    }
+}
+
+// Start typing after initial animations
+setTimeout(typeWriter, 3000);
