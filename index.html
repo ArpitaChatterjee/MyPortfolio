@@ -37,14 +37,15 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="https://arpitachatterjee.github.io/MyPortfolio/."><class="nav__logo"><h2 style=" color: var(--dark-color);">Arpita.</h2></a>
+                <a href="#home" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="Arpita Logo">
+                </a>
             </div>
 
          <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#Experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#Experience" class="nav__link">My Experience</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>                   
                     <li class="nav__item"><a href="#portfolio" class="nav__link">My Projects</a></li>
                     <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arpitachatterjee2510@gmail.com" target="_blank" class="nav__link">Let's Connect</a>
@@ -122,26 +123,33 @@
 
         <!--===== Work Experience =====-->
         <section class="experience section" id="Experience">
-            <h2 class="section-title"> Experience </h2>
-            <div class="owl-carousel owl-theme experience__container">
-               
-                <div class="experience__img pd test-popup-link">
-                    <img src="assets/img/gendigitalinc_logo.jpeg" alt="">
-                    <div class="experience__link">
-                        <a href="https://www.linkedin.com/in/arpitachatterjee25/" class="experience__link-name" target="_blank">
-                        <p>Software Engineer<br>Gen Digital, Chennai<br>July'22-Feb'24</p></a>
+            <h2 class="section-title"> My Experiences </h2>
+            <div class="timeline">
+                <div class="timeline__line"></div>
+                
+                <div class="timeline__item left">
+                    <div class="timeline__year">2022–2026</div>
+                    <div class="timeline__popup">
+                        <img src="assets/img/gendigitalinc_logo.jpeg" alt="Gen Digital" class="timeline__logo">
+                        <div class="timeline__info">
+                            <h3 class="timeline__role">Software Engineer</h3>
+                            <p class="timeline__company">Gen Digital, Chennai</p>
+                            <p class="timeline__tenure">July 2022 – Febuary 2026</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="experience__img pd test-popup-link">
-                    <img src="assets/img/nortonlifelock_logo.jpeg" alt="">
-                    <div class="experience__link">
-                        <a href="https://www.linkedin.com/in/arpitachatterjee25/" class="experience__link-name" target="_blank">
-                        <p>Software Engineer Intern<br>NortonLifeLock, Virtual<br>January'22-June'22</p></a>
+                <div class="timeline__item right">
+                    <div class="timeline__year">2022</div>
+                    <div class="timeline__popup">
+                        <img src="assets/img/nortonlifelock_logo.jpeg" alt="NortonLifeLock" class="timeline__logo">
+                        <div class="timeline__info">
+                            <h3 class="timeline__role">Software Engineer Intern</h3>
+                            <p class="timeline__company">NortonLifeLock, Chennai</p>
+                            <p class="timeline__tenure">January 2022 – June 2022</p>
+                        </div>
                     </div>
                 </div>
-
-                    
             </div>
         </section>
 

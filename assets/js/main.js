@@ -145,3 +145,6 @@ function typeWriter() {
 
 // Start typing after initial animations
 setTimeout(typeWriter, 3000);
+
+/*SCROLL EXPERIENCE TIMELINE*/
+sr.reveal('.timeline__item', { interval: 100, origin: 'bottom', distance: '40px' })
