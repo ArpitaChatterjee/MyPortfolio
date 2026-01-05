@@ -869,38 +869,43 @@ section .owl-navigation {
 }
 
 
-/* ===== FOOTER=====
-
 .footer {
     background-color: var(--dark-color);
+    text-align: center;
 }
-
 .footer__container {
     row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.footer__title{
+    text-align: center
+}
 .footer__title {
     font-size: var(--normal-font-size);
     color: var(--white-color);
     margin-bottom: var(--mb-2);
 }
-
-.footer__link {
-    padding: .25rem 0;
+.footer__text {
+    color: var(--white-color);
+    text-align: center;
 }
-
-.footer__link:hover {
-    color: var(--first-color);
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
-
 .footer__social {
-    font-size: 1.4rem;
-    margin-right: var(--mb-1);
+    font-size: 1.5rem;
+    color: var(--white-color);
 }
-
 .footer__social:hover {
     color: var(--first-color);
-}*/
+    
+}
 
 
 /* ===== MEDIA QUERIES =====*/
