@@ -656,36 +656,42 @@ section .owl-navigation {
 }
 
 @media screen and (max-width: 768px) {
-    .timeline__line {
-        left: 16px;
-        transform: translateX(0);
-    }
-    .timeline {
-        grid-template-columns: 1fr;
-    }
-    .timeline__item {
-        text-align: left;
-        padding-left: 3rem;
-    }
+    .timeline__line { display: none; }
+    .timeline { grid-template-columns: repeat(2, 1fr); column-gap: 1rem; row-gap: 1rem; margin-bottom: var(--mb-4); min-height: auto; }
+    .timeline__item { text-align: left; padding: .75rem; margin: 0; border-left: none; border: 1px solid rgba(58,48,66,.15); border-radius: .5rem; background-color: rgba(255,255,255,.9); }
     .timeline__item.left .timeline__year {
-        left: 16px;
-        right: auto;
-        top: 0;
-        bottom: auto;
-        transform: translate(-50%, 0);
-        width: 64px;
-        height: 64px;
-        font-size: .9rem;
+        display: none;
     }
     .timeline__item.right .timeline__year {
-        left: 16px;
-        right: auto;
-        top: auto;
-        bottom: 0;
-        transform: translate(-50%, 0);
-        width: 64px;
-        height: 64px;
-        font-size: .9rem;
+        display: none;
+    }
+    .timeline__popup {
+        max-width: 100%;
+        text-align: left;
+        justify-content: flex-start;
+        opacity: 1;
+        transform: none;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        column-gap: .75rem;
+        align-items: center;
+        padding: .75rem 0;
+    }
+    .timeline__item.left .timeline__popup::before,
+    .timeline__item.right .timeline__popup::before {
+        display: none;
+    }
+    .timeline__logo {
+        width: 40px;
+        height: 40px;
+    }
+    .timeline__role {
+        margin-bottom: .25rem;
+    }
+    .timeline__company,
+    .timeline__tenure {
+        display: block;
+        line-height: 1.4;
     }
 }
 
