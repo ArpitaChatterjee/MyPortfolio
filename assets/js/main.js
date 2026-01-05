@@ -99,12 +99,15 @@ function scrollActive() {
 
 
 /*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 200,
-    reset: true
-})
+let sr = { reveal: function(){} };
+if (typeof ScrollReveal !== 'undefined') {
+    sr = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 200,
+        reset: true
+    });
+}
 
 /*SCROLL HOME*/
 sr.reveal('.home__title', {})
@@ -131,20 +134,41 @@ sr.reveal('.contact__input', { delay: 20 })
 sr.reveal('.contact__button', { delay: 30 })
 
 /*===== TYPEWRITER EFFECT =====*/
-const typewriterElement = document.getElementById('typewriter');
-const textToType = "Software Engineer in Test (SDET)";
-let charIndex = 0;
-
-function typeWriter() {
-    if (charIndex < textToType.length) {
-        typewriterElement.innerHTML += textToType.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeWriter, 100);
+document.addEventListener('DOMContentLoaded', function() {
+    var el = document.getElementById('typewriter');
+    if (!el) return;
+    var txt = "Software Engineer in Test (SDET)";
+    var i = 0;
+    function tick() {
+        if (i < txt.length) {
+            el.textContent += txt.charAt(i);
+            i++;
+            setTimeout(tick, 100);
+        }
     }
-}
-
-// Start typing after initial animations
-setTimeout(typeWriter, 3000);
+    setTimeout(tick, 1000);
+});
 
 /*SCROLL EXPERIENCE TIMELINE*/
 sr.reveal('.timeline__item', { interval: 100, origin: 'bottom', distance: '40px' })
+
+/*===== OWL INIT GUARD =====*/
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.jQuery && typeof jQuery.fn.owlCarousel === 'function') {
+        jQuery(function($) {
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                autoplay: true,
+                autoplayHoverPause: true,
+                autoplayTimeout: 3000,
+                dots: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 2 }
+                }
+            });
+        });
+    }
+});
