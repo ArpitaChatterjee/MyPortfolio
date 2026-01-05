@@ -7,6 +7,8 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="/assets/img/logo.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/img/logo.png">
       
      
 
@@ -35,18 +37,20 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="https://arpitachatterjee.github.io/MyPortfolio/."><class="nav__logo"><h2 style=" color: var(--dark-color);">Arpita.</h2></a>
+                <!-- <a href="#home" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="Arpita.">
+                </a> -->
+                <a href="#home"><class="nav__logo"><h2 style=" color: var(--dark-color);">Arpita.</h2></a>
+
             </div>
-
-         <div class="nav__menu" id="nav-menu">
+            <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#Experience" class="nav__link">My Experience</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>                   
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">My Projects</a></li>
-                    <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arpitachatterjee2510@gmail.com" target="_blank" class="nav__link">Let's Connect</a>
-
-                </ul>
+                       <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                       <li class="nav__item"><a href="#Experience" class="nav__link">My Experience</a></li>
+                       <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>                   
+                       <li class="nav__item"><a href="#portfolio" class="nav__link">My Projects</a></li>
+                       <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arpitachatterjee2510@gmail.com" target="_blank" class="nav__link">Let's Connect</a>
+                    </ul>
                 </div>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -64,7 +68,7 @@
                     
                     <h1 class="home__title anime-text">Arpita Chatterjee</h1>
 
-                    <span class="home__skill anime-text" id="typewriter"></span>
+                    <span class="home__skill anime-text" id="typewriter" alt="Software Engineer in Test (SDET)"></span>
                     
                     <div>
                       <a href="https://drive.google.com/file/d/1hAWi9TVZXDF3VqhnZd2CEQt1mgeBn8is/view?usp=sharing" target="_blank" class="home__button">My Resume</a>
@@ -400,20 +404,18 @@
     </main>
     
 
-    <!--===== SCROLL REVEAL =====-->
+   <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
    <!-- GSAP -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
-   <!--  Jquery js file  -->
-    <script src="./js/jquery.3.4.1.js"></script>
-
-  
-
-    
+   <!--  jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
 
 
+    <!-- Owl Carousel plugin -->
+    <script src="assets/js/owl.carousel.min.js"></script>
     <!--===== MAIN JS =====-->
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
