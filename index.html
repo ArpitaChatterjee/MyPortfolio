@@ -24,10 +24,15 @@
     <link rel="stylesheet" href="assets/css/all.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>MyPortfolio</title>
+    <title>ArpitaChatterjee</title>
 </head>
 
 <body>
+    <div class="bg-video">
+        <video id="bgVideo" autoplay muted loop playsinline poster="assets/img/bg.jpg">
+            <source src="assets/video/background.mp4" type="video/mp4">
+        </video>
+    </div>
     <!-- OVERLAY -->
         <div class="overlay first"></div>
         <div class="overlay second"></div>
@@ -40,16 +45,16 @@
                 <!-- <a href="#home" class="nav__logo">
                     <img src="assets/img/logo.png" alt="Arpita.">
                 </a> -->
-                <a href="#home"><class="nav__logo"><h2 style=" color: var(--dark-color);">Arpita.</h2></a>
+                <a href="index.html"><class="nav__logo"><h2 style=" color: var(--dark-color);">Arpita.</h2></a>
 
             </div>
             <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                       <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                       <li class="nav__item"><a href="#Experience" class="nav__link">My Experience</a></li>
-                       <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>                   
-                       <li class="nav__item"><a href="#portfolio" class="nav__link">My Projects</a></li>
-                       <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arpitachatterjee2510@gmail.com" target="_blank" class="nav__link">Let's Connect</a>
+                       <li class="nav__item"><a href="aboutMe.html" class="nav__link">About Me</a></li>
+                       <li class="nav__item"><a href="experience.html" class="nav__link">My Experience</a></li>
+                       <li class="nav__item"><a href="skils.html" class="nav__link">My Skills</a></li>                   
+                       <li class="nav__item"><a href="project.html" class="nav__link">My Projects</a></li>
+                       <li class="nav__item"><a href="https://drive.google.com/file/d/1hAWi9TVZXDF3VqhnZd2CEQt1mgeBn8is/view?usp=sharing" target="_blank"class="nav__link">My Resume</a>
                     </ul>
                 </div>
 
@@ -64,19 +69,19 @@
         <section class="home bd-grid" id="home">
              <div class="home">
                 <div class="home__information">
-                    <span class="home__pressent anime-text">Hello, I'm </span>
+                    <span class="home__present anime-text">Hello, I'm </span>
                     
                     <h1 class="home__title anime-text" alt="Arpita Chatterjee">Arpita Chatterjee</h1>
 
                     <span class="home__skill anime-text" id="typewriter" alt="Software Engineer in Test (SDET)"></span>
                     
                     <div>
-                      <a href="https://drive.google.com/file/d/1hAWi9TVZXDF3VqhnZd2CEQt1mgeBn8is/view?usp=sharing" target="_blank" class="home__button">My Resume</a>
+                      <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arpitachatterjee2510@gmail.com" target="_blank" class="home__button">Hire Me</a>
                     </div>
                 </div>
-                <div class="home__scroll">
+                <!-- <div class="home__scroll">
                     <a href="#about" class="home__scroll-link"><i class='bx bx-down-arrow-alt' ></i>Scroll down</a>
-                </div>
+                </div> -->
 
                 <div class="home__img">
                     <img src="assets/img/pppp.png" alt="">
@@ -92,316 +97,11 @@
             </div>
         </section>
 
-        <!--===== ABOUT =====-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About Me</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/pppp.png" alt="">
-                </div>
-
-                <div>
-                   
-                    <div> <h2> I'm Arpita Chatterjee</h2></div>
-                    <span class="about__profession">Software Engineer in Test </span>
-                    <p class="about__text"> I am a Software Engineer with almost 4 years of experience building and improving automation frameworks, backend and API validation systems, and CI/CD pipelines for high-traffic consumer products. I have a strong track record of raising test coverage to over 86%, improving build stability to 90%, and speeding up releases for iOS, Android, and web platforms. My technical skills include Java, Kotlin, Python, SQL, cloud-based test infrastructure, and DevOps tools. I have worked on production systems at a global security product company.</p>
-                    
-                    <div class="about__social">
-                    <a href="https://www.linkedin.com/in/arpitachatterjee25/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://github.com/ArpitaChatterjee/." class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.instagram.com/_arpita.chatterjee_/" class="about__social-icon"><i class='bx bxl-instagram-alt' ></i></a>
-                    <a href="https://www.facebook.com/Chatterjee2510" class="about__social-icon"><i class='bx bxl-facebook-square'></i></a>
-                    
-                    <div>
-                      <a href="https://drive.google.com/file/d/1hAWi9TVZXDF3VqhnZd2CEQt1mgeBn8is/view?usp=sharing" target="_blank" class="home__button">My Resume</a>
-                    </div>  
-            </div>
-        </section>
-
- 
-        <!-- --------------------- Blog Carousel ----------------- -->
-
-        <!--===== Work Experience =====-->
-        <section class="experience section" id="Experience">
-            <h2 class="section-title"> Experience </h2>
-            <div class="timeline">
-                <div class="timeline__line"></div>
-                
-                <div class="timeline__item left">
-                    <div class="timeline__year">2022–2026</div>
-                    <div class="timeline__popup">
-                        <img src="assets/img/gendigitalinc_logo.jpeg" alt="Gen Digital" class="timeline__logo">
-                        <div class="timeline__info">
-                            <h3 class="timeline__role">Software Engineer</h3>
-                            <p class="timeline__company">Gen Digital, Chennai</p>
-                            <p class="timeline__tenure">Jul 2022 – Feb 2026</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline__item right">
-                    <div class="timeline__year">2022</div>
-                    <div class="timeline__popup">
-                        <img src="assets/img/nortonlifelock_logo.jpeg" alt="NortonLifeLock" class="timeline__logo">
-                        <div class="timeline__info">
-                            <h3 class="timeline__role">Software Engineer Intern</h3>
-                            <p class="timeline__company">NortonLifeLock, Chennai</p>
-                            <p class="timeline__tenure">Jan 2022 – Jun 2022</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">My Skills</h2>
-
-            <div class="skills__container bd-grid">
-                <!-- Skill Group 1: Languages -->
-                <div class="skills__content">
-                    <div class="skills__header">
-                        <i class='bx bx-code-alt skills__icon'></i>
-                        <span class="skills__title">Languages</span>
-                        <i class='bx bx-chevron-down skills__arrow'></i>
-                    </div>
-                    <div class="skills__list">
-                        <span class="skills__name">Java</span>
-                        <span class="skills__name">C++</span>
-                        <span class="skills__name">Python</span>
-                        <span class="skills__name">JavaScript</span>
-                        <span class="skills__name">SQL</span>
-                        <span class="skills__name">Swift</span>
-                        <span class="skills__name">Swift UI</span>
-                    </div>
-                </div>
-
-                <!-- Skill Group 2: Automation & Testing -->
-                <div class="skills__content">
-                    <div class="skills__header">
-                        <i class='bx bx-test-tube skills__icon'></i>
-                        <span class="skills__title">Automation & Testing</span>
-                        <i class='bx bx-chevron-down skills__arrow'></i>
-                    </div>
-                    <div class="skills__list">
-                        <span class="skills__name">Appium</span>
-                        <span class="skills__name">TestNG</span>
-                        <span class="skills__name">Nightwatch.JS</span>
-                        <span class="skills__name">Selenium</span>
-                    </div>
-                </div>
-
-                <!-- Skill Group 3: Backend & APIs -->
-                <div class="skills__content">
-                    <div class="skills__header">
-                        <i class='bx bx-server skills__icon'></i>
-                        <span class="skills__title">Backend & APIs</span>
-                        <i class='bx bx-chevron-down skills__arrow'></i>
-                    </div>
-                    <div class="skills__list">
-                        <span class="skills__name">REST APIs</span>
-                        <span class="skills__name">HTTP validation</span>
-                    </div>
-                </div>
-
-                <!-- Skill Group 4: CI/CD & DevOps -->
-                <div class="skills__content">
-                    <div class="skills__header">
-                        <i class='bx bx-infinite skills__icon'></i>
-                        <span class="skills__title">CI/CD & DevOps</span>
-                        <i class='bx bx-chevron-down skills__arrow'></i>
-                    </div>
-                    <div class="skills__list">
-                        <span class="skills__name">Jenkins</span>
-                        <span class="skills__name">TeamCity</span>
-                        <span class="skills__name">Git</span>
-                        <span class="skills__name">AWS Device Farm</span>
-                        <span class="skills__name">Sauce Labs</span>
-                        <span class="skills__name">Browser Stack</span>
-                    </div>
-                </div>
-
-                <!-- Skill Group 5: Data & Scripting -->
-                <div class="skills__content">
-                    <div class="skills__header">
-                        <i class='bx bx-data skills__icon'></i>
-                        <span class="skills__title">Data & Scripting</span>
-                        <i class='bx bx-chevron-down skills__arrow'></i>
-                    </div>
-                    <div class="skills__list">
-                        <span class="skills__name">MySQL</span>
-                        <span class="skills__name">Python (Pandas, NumPy)</span>
-                        <span class="skills__name">Data Validation</span>
-                    </div>
-                </div>
-
-                <!-- Skill Group 6: Concepts -->
-                <div class="skills__content">
-                    <div class="skills__header">
-                        <i class='bx bx-bulb skills__icon'></i>
-                        <span class="skills__title">Concepts</span>
-                        <i class='bx bx-chevron-down skills__arrow'></i>
-                    </div>
-                    <div class="skills__list">
-                        <span class="skills__name">Data Structures</span>
-                        <span class="skills__name">OOP</span>
-                        <span class="skills__name">DBMS</span>
-                        <span class="skills__name">OS</span>
-                        <span class="skills__name">CI/CD</span>
-                        <span class="skills__name">Test Architecture</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-       
-        <!--===== PORTFOLIO =====-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section-title"> My Projects</h2>
-             <!--div class="button-group button">
-                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
-                    <button type="button" data-filter=".ml">ML</button>
-                    <button type="button" data-filter=".ds">DS</button>
-                    <button type="button" data-filter=".wd">WD</button>
-                    <button type="button" data-filter=".pd">PyD</button>
-                </div-->
-
-
-            <div class="portfolio__container bd-grid row grid" >
-            
-              
-                <div class="portfolio__img pd test-popup-link">
-                    <img src="assets/img/work13.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Routine-Analysis-of-a-Comedian" class="portfolio__link-name">Routine Analysis of Comedians</a>
-                    </div>
-                </div>
-                <div class="portfolio__img pd test-popup-link">
-                    <img src="assets/img/work15.webp" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Recommendation-System/blob/main/Recommendation_System.ipynb" class="portfolio__link-name">Recommendation System</a>
-                    </div>
-                </div>
-                <div class="portfolio__img pd test-popup-link">
-                    <img src="assets/img/work16.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="hhttps://github.com/ArpitaChatterjee/Price-Prediction" class="portfolio__link-name">Price Prediction WebApp</a>
-                    </div>
-                </div>
-                <div class="portfolio__img pd test-popup-link">
-                    <img src="assets/img/work2.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Covid-19-Tracker-with-VoiceAssistant" class="portfolio__link-name">Covid19 Voice Assistant</a>
-                    </div>
-                </div>
-                <div class="portfolio__img pd test-popup-link">
-                    <img src="assets/img/work17.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Car-Pedestrian-Detection" class="portfolio__link-name">Car-Pedestrian Detection</a>
-                    </div>
-                </div>
-        
-                <!--div class="portfolio__img ml test-popup-link ">
-                    <img src="assets/img/work13.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Plant-DiseaseDetection" class="portfolio__link-name">Plant Disease Detector</a>
-                    </div>
-                </div-->
-                <div class="portfolio__img ml test-popup-link">
-                    <img src="assets/img/work9.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Face-Detector" class="portfolio__link-name">Face-Detector</a>
-                    </div>
-                 </div>
-
-                 <!--div class="portfolio__img ds test-popup-link">
-                    <img src="assets/img/work11.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/LogisticReg-Titanic-Data-Analysis" class="portfolio__link-name">Titanic Survivor</a>
-                    </div>
-                </div-->
-                <div class="portfolio__img pd test-popup-link">
-                    <img src="assets/img/work18.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Stock-Market-Prediction/blob/main/Stock-Market-Prediction.ipynb" class="portfolio__link-name">Stock Price Prediction</a>
-                    </div>
-                </div>
-                <div class="portfolio__img ml test-popup-link ">
-                    <img src="assets/img/work10.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/Biometric-Attendance" class="portfolio__link-name">Biometric-Attendance</a>
-                    </div>
-                </div>
-             
-                <!--div class="portfolio__img pd test-popup-link">
-                    <img src="assets/img/work12.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://github.com/ArpitaChatterjee/SmartBot" class="portfolio__link-name">SmartBot</a>
-                    </div>
-                </div-->
-                <!--div class="portfolio__img wd test-popup-link">
-                    <img src="assets/img/work1.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://arpitachatterjee.github.io/MyBlogSpace/" class="portfolio__link-name">MyBlogSpace</a>
-                    </div>
-                </div>
-                <div class="portfolio__img wd test-popup-link">
-                    <img src="assets/img/work3.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://arpitachatterjee.github.io/Tic-Tac-Toe-Game/" class="portfolio__link-name">Tic-Tac_Toe Game</a>
-                    </div>
-                </div>
-                <!--div class="portfolio__img wd test-popup-link">
-                    <img src="assets/img/work5.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://arpitachatterjee.github.io/Budget-Calculator/" class="portfolio__link-name">Budget Calculator</a>
-                    </div>
-                </div>
-
-                <!--div class="portfolio__img wd test-popup-link">
-                    <img src="assets/img/work8.jpg" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="https://arpitachatterjee.github.io/To-Do-List/" class="portfolio__link-name">ToDO App</a>
-                    </div>
-                </div-->
-
-
-            </div>
-        </section>
-        
+       </main>     
         <footer class="footer section" id="footer">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Made with <i class='bx bx-heart'></i> by Arpita Chatterjee</h2>
-                    <h2 class="footer__title">Connect me on socials</h2>
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/arpitachatterjee25/" target="_blank" class="footer__social"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/ArpitaChatterjee/." target="_blank" class="footer__social"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.instagram.com/_arpita.chatterjee_/" target="_blank" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
-                        <a href="https://www.facebook.com/Chatterjee2510" target="_blank" class="footer__social"><i class='bx bxl-facebook-square'></i></a>
-                    </div>
-                </div>
-            </div>
         </footer>
         
-    </main>
+
     
 
    <!--===== SCROLL REVEAL =====-->
@@ -424,66 +124,4 @@
 
 </html>
 
-<!--FOOTER 
-    <footer class="footer section">
-        <div class="footer__container bd-grid">
-            <div class="footer__data">
-                <h2 class="footer__title">Arpita Chatterjee</h2>
-                <p class="footer__text">I'm Arpita Chatterjee and this is my portfolio ;) .</p>
-            </div>
 
-            <div class="footer__data">
-                <h2 class="footer__title">EXPLORE</h2>
-                <ul>
-                    <li><a href="#home" class="footer__link">Home</a></li>
-                    <li><a href="#about" class="footer__link">About</a></li>
-                     <li><a href="#Experience" class="footer__link">Experience</a></li>
-                    <li><a href="#skills" class="footer__link">Skills</a></li>
-                    <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                    <li><a href="#Contact" class="footer__link">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__data">
-                <h2 class="footer__title">Follow me at </h2>
-                <a href="https://www.facebook.com/Chatterjee2510" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/_arpita.chatterjee_/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.linkedin.com/in/arpitachatterjee2510/." class="footer__social"><i class='bx bxl-linkedin' ></i></a>
-            </div>
-
-
-        </div>
-    </footer>
-    
-    
-       <h3 class="skills__subtitle">Programming Language</h3>
-                    <span class="skills__name">C++</span>
-                    <span class="skills__name">Python</span>
-                    <span class="skills__name">C</span>
-                    
-                    <span class="skills__name">HTML</span>
-                    <span class="skills__name">CSS</span>
-                    <span class="skills__name">JavaScript</span>
-
-                    
-                    <span class="skills__name">MySql</span><s
-                    pan class="skills__name">Tensorflow</span>
-<span class="skills__name">Python Development</span>
-                    <h3 class="skills__subtitle">Libraries</h3>
-                    <span class="skills__name">NumPy</span>
-                    <span class="skills__name">Matplotlib</span>
-                    <span class="skills__name">Scikit-learn</span>
-                    
-                    <span class="skills__name">Rasa</span>
-                    <span class="skills__name">BeautifulSoup</span>
-    
-    <div class="home__container bd-grid">
-                <h1 class="home__title"><span>HO</span><br>LA.</h1>
-
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                </div>
-
-                <img src="assets/img/pppp.png" alt="" class="home__img">
-            </div>
-    -->

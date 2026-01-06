@@ -53,28 +53,7 @@ const responsive = {
             portfolio__img: 3
         }
     }
-    // Carousal
-$(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-        loop: false,
-        margin: 10,
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 3000,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 2
-            }
-        }
-    });
-});
+// Carousal
 
 //*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
@@ -149,6 +128,24 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(tick, 1000);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var groups = document.querySelectorAll('.skills__content');
+    for (var gi = 0; gi < groups.length; gi++) {
+        var group = groups[gi];
+        var header = group.querySelector('.skills__header');
+        if (header) {
+            header.addEventListener('click', function(e) {
+                var parent = e.currentTarget.parentElement;
+                if (parent.classList.contains('open')) {
+                    parent.classList.remove('open');
+                } else {
+                    parent.classList.add('open');
+                }
+            });
+        }
+    }
+});
+
 /*SCROLL EXPERIENCE TIMELINE*/
 sr.reveal('.timeline__item', { interval: 100, origin: 'bottom', distance: '40px' })
 
@@ -169,6 +166,36 @@ document.addEventListener('DOMContentLoaded', function() {
                     1000: { items: 2 }
                 }
             });
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var cards = document.querySelectorAll('.experience__card');
+    for (var ci = 0; ci < cards.length; ci++) {
+        var card = cards[ci];
+        card.addEventListener('click', function(e) {
+            var el = e.currentTarget;
+            if (el.classList.contains('open')) {
+                el.classList.remove('open');
+            } else {
+                el.classList.add('open');
+            }
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggles = document.querySelectorAll('.experience__toggle');
+    for (var ti = 0; ti < toggles.length; ti++) {
+        var t = toggles[ti];
+        t.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var card = e.currentTarget.closest('.experience__card');
+            if (card) {
+                var isOpen = card.classList.toggle('open');
+                e.currentTarget.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            }
         });
     }
 });
